@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/lghtgray"
+    android:orientation="vertical">
+
+    <!-- Isme hum poet_name ko rakhege -->
+    <TextView
+        android:id="@+id/textview_poetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="30dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Mirza Galib"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Isme hum poetry_Data ko rakhege -->
+    <TextView
+        android:id="@+id/textview_poetryData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="60dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="ham ko ma.alūm hai jannat kī haqīqat lekin
+
+dil ke ḳhush rakhne ko 'ġhālib' ye ḳhayāl achchhā hai "
+        android:textSize="16sp" />
+
+    <!-- Isme hum Date & Time ko rakhege -->
+    <TextView
+        android:id="@+id/textview_poetryDateandtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:minHeight="20dp"
+        android:padding="5dp"
+        android:text="10-apr-2021"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <!-- Ab hum 2 Button lgayege :- Update & Delete -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/update_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textAllCaps="false"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textAllCaps="false"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+</LinearLayout>
